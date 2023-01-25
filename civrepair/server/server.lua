@@ -26,8 +26,6 @@ AddEventHandler('validateRepairVehicle', function(source)
                 TriggerClientEvent('esx:showNotification', source, 'You do not have a repair kit', msg, 1000)
             end
         end
-    else
-        print("Player does not exist")
     end
 end)
 
@@ -41,8 +39,6 @@ AddEventHandler('repairCompleted', function(source)
         else
             TriggerClientEvent('esx:showNotification', source, 'You do not have a repair kit')
         end
-    else
-        print("Player does not exist")
     end
 end)
 
